@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: wego-github-wego-test-app-s0u4isy0
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: wego-github-wego-test-app-s0u4isy0
+  url: ssh://git@github.com/weaveworks-gitops-test/wego-test-app-s0u4isy0.git
+
